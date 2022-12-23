@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>詮順居家長照</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- 上方選單 -->
+        <div class="banner">
+            <img id="logo" src="logo.png" onclick="showFrontPage()">
+            <span id="showFrontPage" class="tab" style="color: #990000;" onclick="showFrontPage()">首頁</span>
+            <span id="showNewsPage" class="tab" onclick="showNewsPage()">最新消息</span>
+            <span id="showServicePage" class="tab" onclick="showServicePage()">服務項目</span>
+            <span id="showHealthPage" class="tab" onclick="showHealthPage()">衛教專區</span>
+            <span id="showJoinPage" class="tab" onclick="showJoinPage()">加入我們</span>
+            <span id="showCasePage" class="tab" onclick="showCasePage()">案例分享</span>
+            <span id="showLocationPage" class="tab" onclick="showLocationPage()">交通位置</span>
+            <span id="showContactPage" class="tab" onclick="showContactPage()">聯絡我們</span>
+            <hr>
+        </div>
+
+        <div class="container">
+            <!-- 首頁 -->
+            <div id="frontPage" class="page">
+                <div id="intro">
+                    <h3>公司簡介</h3>
+                    <p>因應人口老化與身障者的需求，政府於 2016 年 12 月核定長照政策並於 2017 年 1 月實施長照 2.0 計畫。本公司創辦人本著社會工作者的愛心、同理心、誠信、助人、照護、資源應用等理念並配合政府長照 2.0 於 2020 年 11 月底成立詮順居家長照。</p>
+                    <p>透過居家服務提升其生活品質、關懷、照顧長者和身心障礙者，以打造「成功在地老化、健康樂居」的願景，讓本市長者在熟悉的社區獲得在地的生活照顧，享有尊嚴、活力與獨立自主的老年生活。</p>
+                </div>
+
+                <div id="purpose">
+                    <h3>本機構的服務理念</h3>
+                    <ol>
+                        <li>以愛心、同理心與誠信的精神從事服務工作。</li>
+                        <li>對每一位長者及身心障礙者提供有尊嚴、有品質的服務。</li>
+                        <li>以居家化的服務模式，提供個別化及專業化的服務。</li>
+                        <li>優先為弱勢長者及身心障礙者提供服務。</li>
+                        <li>回應時代需求，創新多元服務。累積每一個信賴、肯定，讓居家照服員的專業技能能有所發揮並獲得自我成長及成功。</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- 最新消息 -->
+            <div id="newsPage" class="page" style="display: none;">
+                <h3>最新消息</h3>
+            </div>
+
+            <!-- 服務項目 -->
+            <div id="servicePage" class="page" style="display: none;">
+                <div id="serviceItem">
+                    <h3>居家服務</h3>
+                    <ol>
+                        <li>照顧服務</li>
+                        <li>家務協助</li>
+                        <li>備餐服務</li>
+                        <li>陪同服務</li>
+                        <li>聊天與看視</li>
+                    </ol>
+                </div>
+
+                <div id="resting">
+                    <h3>居家喘息</h3>
+                    <p>組合以 2 小時為 1 給（支）付單位，單日居家喘息服務以 10 小時為上限。</p>                        
+                </div>
+                
+                <div id="serviceTarget">
+                    <h3>服務對象</h3>
+                    <ol>
+                        <li>65 歲以上老人</li>
+                        <li>領有身心障礙證明（手冊）者</li>
+                        <li>55-64 歲原住民</li>
+                        <li>50 歲以上失智症者</li>
+                    </ol>
+                </div>
+
+                <div id="serviceList">
+                    <h3>服務項目</h3>
+                    <table id="serviceTable">
+                        <tr>
+                            <th>碼別 / 服務項目</th>
+                            <th>給（支）付價格（元）</th>
+                            <th>一般戶（16%）</th>
+                            <th>中低收入戶（5%）</th>
+                        </tr>
+                        <tr>
+                            <td>BA01 基本身體清潔</td>
+                            <td>260</td>
+                            <td>41</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>BA02 基本日常照顧</td>
+                            <td>195</td>
+                            <td>31</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>BA03 測量生命徵象</td>
+                            <td>35</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>BA04 協助進食或管灌餵食</td>
+                            <td>130</td>
+                            <td>20</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>BA05 餐食照顧</td>
+                            <td>310</td>
+                            <td>49</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>BA07 協助沐浴及洗頭</td>
+                            <td>325</td>
+                            <td>52</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>BA08 足部照護</td>
+                            <td>500</td>
+                            <td>80</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>BA10 翻身拍背</td>
+                            <td>155</td>
+                            <td>24</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>BA11 肢體關節活動</td>
+                            <td>195</td>
+                            <td>31</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>BA12 協助上（下）樓梯</td>
+                            <td>130</td>
+                            <td>20</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>BA13 陪同外出</td>
+                            <td>195</td>
+                            <td>31</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>BA14 陪同就醫</td>
+                            <td>685</td>
+                            <td>109</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>BA15 家務協助</td>
+                            <td>195</td>
+                            <td>31</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>BA16 代購或代領或代送服務</td>
+                            <td>130</td>
+                            <td>20</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>BA17a 人工氣道管內分泌物抽吸</td>
+                            <td>75</td>
+                            <td>10</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>BA17b 口腔內分泌物抽吸</td>
+                            <td>65</td>
+                            <td>10</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>BA17c 尿管及鼻胃管之清潔與固定</td>
+                            <td>50</td>
+                            <td>8</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>BA17d1 血糖機驗血糖</td>
+                            <td>50</td>
+                            <td>8</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>BA17d2 甘油球通便</td>
+                            <td>50</td>
+                            <td>8</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>BA17e 依指示置入藥盒</td>
+                            <td>50</td>
+                            <td>8</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>BA18 安全看視</td>
+                            <td>200</td>
+                            <td>32</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>BA20 巡視服務</td>
+                            <td>175</td>
+                            <td>28</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>BA22 協助洗頭</td>
+                            <td>130</td>
+                            <td>20</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>BA23 協助洗頭</td>
+                            <td>200</td>
+                            <td>32</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>BA24 協助排泄</td>
+                            <td>220</td>
+                            <td>35</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>GA09 喘息服務</td>
+                            <td>770</td>
+                            <td>123</td>
+                            <td>38</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- 衛教專區 -->
+            <div id="healthPage" class="page" style="display: none;">
+                <h3>衛教專區</h3>
+
+                <ol>
+                    <li>
+                        <p>Ｑ：如何申請長照？<br>
+                        Ａ：如有長照服務申請需求，歡迎撥打 1966 長照服務專線（前 5 分鐘免費）。</p>
+                    </li>
+                    <li>
+                        <p>Ｑ：長照申請流程？<br>
+                        Ａ：政府補助（1966）➙ 照管專員到府評估 ➙ 討論照顧計畫 ➙ 取得長照服務（指定詮順）</p>
+                    </li>
+                    <li>
+                        <p>Ｑ：政府補助項目有哪些？<br>
+                        Ａ：補助的居家服務項目分成4項，「照顧及專業服務」、「交通接送服務」、「輔具及居家無障礙環境改善服務」「喘息服務」。並依照家庭收入決定負擔比率。</p>
+                    </li>
+                    <li>
+                        <p>Ｑ：負擔比率怎麼算？<br>
+                        Ａ：依照個案的家庭收入分為「低收入戶」、「中低收入戶」、「一般戶」。負擔比率即為每月自付金額的 ％ 數，一般戶負擔比率為 16％、中低收入戶 5％、低收入戶 0%（免自付額）。</p>
+                    </li>
+                    <li>
+                        <p>Ｑ：若我想要調整服務項目該怎麼做？<br>
+                        Ａ：先聯繫居家督導討論服務項目內容，再由案主與個管師聯絡申請異動。</p>
+                    </li>
+                </ol>            
+            </div>
+
+            <!-- 加入我們 -->
+            <div id="joinPage" class="page" style="display: none;">
+                <h3>加入我們</h3>
+            </div>
+
+            <!-- 案例分享 -->
+            <div id="casePage" class="page" style="display: none;">
+                <h3>案例分享</h3>
+            </div>
+
+            <!-- 交通位置 -->
+            <div id="locationPage" class="page" style="display: none;">
+                <h3>交通位置</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3614.514883226732!2d121.5415942!3d25.0505322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abddc8acd95b%3A0xbda549f63f961dbe!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDlvqnoiIjljJfot682MuiZnw!5e0!3m2!1szh-TW!2stw!4v1671775069272!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <!-- 聯絡我們 -->
+            <div id="contactPage" class="page" style="display: none;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-HaiOnthusgxIQscaQ0OtX709vGPUdaKvd17mUsV1ObWzfw/viewform?embedded=true" width="640" height="809" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+            </div>            
+        </div>
+        
+        <!-- footer -->
+        <footer>
+            <hr>
+            <div class="box">
+                <p>TEL：(02)2773-0398 / FAX：(02)2773-0259</p>
+                <p>E-mail：welldone82941629@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <p>地址：臺北市中山區復興北路62號二樓</p>
+                <p>營業時間：週一至週五 0900-1800（週末及國定假日休假）</p>
+            </div>
+        </footer>
+        
+        <br>
+    </body>
+</html>

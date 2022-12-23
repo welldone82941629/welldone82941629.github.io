@@ -1,0 +1,71 @@
+body{
+    font-family: 微軟正黑體;
+}
+
+.banner{
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    top: 0px;
+    padding-top: 20px;
+    z-index: 1;
+    color: grey;
+    font-weight: bold;
+    background-color: white;
+}
+
+#logo{
+    cursor: pointer;
+}
+
+.page{
+    display: block;
+}
+
+.tab{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab:hover{
+    color: #990000;
+}
+
+.container{
+    width: 68%;
+    position: relative;
+    left: 16%;
+    top: 80px;
+}
+
+#serviceTable, th, td{
+    text-align: left;
+    border: 1px solid white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#serviceTable th{
+    background-color: #cccccc;
+}
+
+#serviceTable tr:nth-child(odd){
+    background-color: #e6e6e6;
+}
+
+footer{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 95px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-weight: bold;
+}
