@@ -1,48 +1,115 @@
 body{
+    margin: 0px;
     font-family: 微軟正黑體;
 }
 
-.banner{
-    width: 70%;
-    position: fixed;
-    left: 15%;
+html{
+    scroll-behavior: smooth;
+}
+
+/* 上方選單 */
+
+#navBar{
+    position: sticky;
     top: 0px;
-    padding-top: 20px;
+    padding-top: 16px;
     z-index: 1;
-    color: grey;
-    font-weight: bold;
     background-color: white;
+    display: flex;
+    justify-content: center;
 }
 
 #logo{
     cursor: pointer;
 }
 
+#navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navBar li{
+    height: 51.2px;
+    border-bottom: 2px groove #DCDCDC;
+    float: left;
+}
+
+li a, .dropbtn {
+    padding: 14px 16px;
+    background-color: white;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    color: #990000;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #f9f9f9;
+    display: none;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color: #696969;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 內文 */
+
+.container{
+    position: relative;
+    width: 66%;
+    left: 17%;
+    min-height: 520px;
+    padding-bottom: 12px;
+}
+
 .page{
     display: block;
 }
 
-.tab{
-    padding: 10px;
+.newsEach:hover{
     cursor: pointer;
+    color: #696969;
+    text-decoration: underline;
 }
 
-.tab:hover{
-    color: #990000;
-}
-
-.container{
-    width: 68%;
-    position: relative;
-    left: 16%;
-    top: 80px;
+.photoSet{
+    width: 800px;
+    padding-top: 6px;
 }
 
 #serviceTable, th, td{
-    text-align: left;
-    border: 1px solid white;
     padding-left: 8px;
     padding-right: 8px;
+    border: 1px solid white;
+    text-align: left;
 }
 
 #serviceTable th{
@@ -53,19 +120,45 @@ body{
     background-color: #e6e6e6;
 }
 
+/* 公司資訊 */
+
 footer{
-    width: 70%;
     position: relative;
-    left: 15%;
-    top: 95px;
+    width: 69%;
+    left: 15.5%;
+    min-height: 240px;
+    padding-top: 12px;
     padding-bottom: 20px;
+    border-top: 2px groove #DCDCDC;
     text-align: center;
 }
 
 .box{
-    display: inline-block;
-    text-align: left;
     margin-left: 60px;
     margin-right: 60px;
     font-weight: bold;
+    text-align: left;
+    display: inline-block;
+}
+
+/* 至頂按鈕 */
+
+#myBtn {
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    z-index: 99;
+    background-color: #E8E8E8;
+    color: gray;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #A9A9A9;
+    color: white;
 }
