@@ -313,3 +313,13 @@ function news20230114(){
     news20230114Content.style.display = "block";
     recentPage = "news20230114";
 }
+
+function news20221209(){
+    const page = document.getElementsByClassName("page");
+    const news20221209Content = document.getElementById("news20221209Content");
+
+    page[1].style.display = "none";
+
+    news20221209Content.style.display = "block";
+    recentPage = "news20221209";
+}
